@@ -48,7 +48,7 @@ jobs:
 
       - name: 🧩 Install Dependencies
         id: install-dependencies
-        run: npm ci
+        run: npm install
 
       - name: 🏗️ Build with VitePress
         id: build
