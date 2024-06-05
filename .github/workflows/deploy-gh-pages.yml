@@ -20,9 +20,6 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
-env:
-  DOC_DIR: docs
-
 jobs:
   deploy:
     environment:
@@ -51,12 +48,10 @@ jobs:
 
       - name: 🧩 Install Dependencies
         id: install-dependencies
-        working-directory: ${{ env.DOC_DIR }}
         run: npm ci
 
       - name: 🏗️ Build with VitePress
         id: build
-        working-directory: ${{ env.DOC_DIR }}
         run: |
           npm run docs:build
 
@@ -64,7 +59,7 @@ jobs:
         id: upload-artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs/website/.vitepress/dist
+          path: src/.vitepress/dist
 
       - name: 🔥 Deploy to GitHub Pages
         id: deploy-gh-pages
