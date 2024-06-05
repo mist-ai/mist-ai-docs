@@ -2,6 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: "/mist-ai-docs/",
   title: "MIST.AI Documentation",
   description: "Official MIST.AI Documentation",
   themeConfig: {
