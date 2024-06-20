@@ -7,7 +7,10 @@ export default defineConfig({
   description: "Official MIST.AI Documentation",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [{ text: "Home", link: "/" }],
+    nav: [
+      { text: "Home", link: "/" },
+      { text: "0.1.0", items: [{ text: "Changelog", link: "#" }] },
+    ],
 
     sidebar: [
       {
