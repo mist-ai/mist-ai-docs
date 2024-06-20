@@ -21,6 +21,7 @@ features:
     icon:
       src: overview.png
     details: Discover the essence of our platform
+    link: overview/introduction.md
   - title: Products
     icon:
       src: product.png
