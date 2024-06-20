@@ -19,7 +19,15 @@ export default defineConfig({
           { text: "Introduction", link: "/overview/introduction" },
           { text: "Literature Review", link: "/overview/lit-review" },
           { text: "Market Analysis", link: "/overview/market-analysis" },
+          { text: "Next Steps", link: "/overview/next-steps" },
         ],
+      },
+      {
+        text: "Products",
+        items: [],
+      },
+      {
+        text: "Papers",
       },
     ],
 
