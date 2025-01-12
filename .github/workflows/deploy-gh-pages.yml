@@ -5,7 +5,7 @@ name: ☄️ Deploy Documentation
 on:
   push:
     branches:
-      - docs-publish-test
+      - deploy
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
